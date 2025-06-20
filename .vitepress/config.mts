@@ -9,6 +9,11 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     logo: "cloud.svg",  // 主页标题LOGO
 
+    // 文章页 "在GitHub上编辑" 链接
+    editLink: {
+      pattern: "https://github.com/85521303/docs-vitepress/edit/master/:path"
+    },
+
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Examples', link: '/markdown-examples' }
