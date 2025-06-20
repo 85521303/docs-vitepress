@@ -7,7 +7,7 @@ hero:
   text: "超级无敌个人知识库"
   tagline: 持续学习，不断进步
   image:
-    src: /cloud.svg
+    src: /img/cloud.svg
     alt: 天高云淡
   actions:
     - theme: brand
