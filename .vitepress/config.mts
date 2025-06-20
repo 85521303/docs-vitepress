@@ -6,8 +6,8 @@ export default defineConfig({
   description: "天高云淡，个人知识库，计算机，前端，后端",
   base: "/docs-vitepress/", // GitHub仓库名称
 
-  head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
-  
+  head: [['link', { rel: 'icon', href: '/docs-vitepress/favicon.ico' }]],
+
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: "img/cloud.svg",  // 主页标题LOGO
