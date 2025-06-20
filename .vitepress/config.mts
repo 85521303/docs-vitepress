@@ -11,7 +11,8 @@ export default defineConfig({
 
     // 文章页 "在GitHub上编辑" 链接
     editLink: {
-      pattern: "https://github.com/85521303/docs-vitepress/edit/master/:path"
+      pattern: "https://github.com/85521303/docs-vitepress/edit/master/:path",
+      text: "在GitHub上编辑此页面"
     },
 
     nav: [
