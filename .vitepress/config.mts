@@ -23,7 +23,10 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Examples', link: '/markdown-examples' },
-      { text: 'Vue3', link: '/markDown/Vue3/communicate-between-components' }
+      {
+        text: '前端', items: [
+          { text: 'Vue3', link: '/markDown/Vue3/communicate-between-components' },
+      ] }
     ],
 
     sidebar: {
