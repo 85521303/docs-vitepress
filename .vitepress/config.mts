@@ -42,6 +42,7 @@ export default defineConfig({
         items: [
           { text: 'Vue3 组件间通信', link: '/markDown/Vue3/communicate-between-components' },
           { text: 'Vue3 插槽', link: '/markDown/Vue3/slot' },
+          { text: 'Vue3 VueRouter', link: '/markDown/Vue3/vue-router' },
           { text: 'Vue3 Pinia状态管理库', link: '/markDown/Vue3/Pinia-state-manager' },
           { text: 'Vue3 其他API汇总', link: '/markDown/Vue3/other-API' },
           { text: 'Vue3 项目配置问题汇总', link: '/markDown/Vue3/project-config' }
