@@ -75,7 +75,7 @@ const { items, capacity, weight } = storeToRefs(BackPackStore);
 
 ## 方式一：直接修改
 
-```javascript
+```vue
 <script setup lang="ts">
 import { storeToRefs } from 'pinia';
 import { useBackPackStore } from '@/stores/backpack';
