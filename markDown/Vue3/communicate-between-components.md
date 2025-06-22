@@ -4,7 +4,7 @@
 
 `Parent.vue`
 
-```html
+```vue
 <script setup lang="ts">
 
 import { ref } from 'vue';
@@ -31,7 +31,7 @@ function getToy(toyname: string) {
 
 `Child.vue`
 
-```html
+```vue
 <script setup lang="ts">
 defineProps(['car', 'sendToy']);
 
@@ -57,7 +57,7 @@ const toyname = '布娃娃';
 
 `Parent.vue`
 
-```html
+```vue
 <script setup lang="ts">
 import { ref } from 'vue';
 import Child from './Child.vue';
@@ -81,7 +81,7 @@ function getToy(toyname: string) {
 
 `Child.vue`
 
-```html
+```vue
 <script setup lang="ts">
 const emit = defineEmits(['send-toy'])
 const toyname = '布娃娃';
@@ -122,7 +122,7 @@ export default emitter
 
 在组件中使用
 
-```html
+```vue
 <script>
 import emitter from '@/utils/mitt'
 
@@ -158,7 +158,7 @@ setTimeout(() => {
 
 `Parent.vue`
 
-```html
+```vue
 <script setup lang="ts">
 import Child from './Child.vue';
 import { ref } from 'vue'
@@ -181,7 +181,7 @@ const username = ref('zhangsan')
 
 `Child.vue`
 
-```html
+```vue
 <script setup lang="ts">
 defineProps(['modelValue'])
 const emit = defineEmits(['update:modelValue'])
@@ -197,7 +197,7 @@ const emit = defineEmits(['update:modelValue'])
 
 `App.vue`
 
-```html
+```vue
 <script setup>
 import { ref } from 'vue'
 import UserName from './UserName.vue'
@@ -213,7 +213,7 @@ const lastName = ref("Dan")
 
 `UserName.vue`
 
-```html
+```vue
 <script setup>
 const firstName = defineModel('firstName')
 const lastName = defineModel('lastName')
@@ -231,7 +231,7 @@ const lastName = defineModel('lastName')
 
 `Parent.vue`
 
-```html
+```vue
 <script setup lang="ts">
 import Child from './Child.vue';
 import { ref } from 'vue'
@@ -260,7 +260,7 @@ function updataA(value: number) {
 
 `Child.vue`
 
-```html
+```vue
 <script setup lang="ts">
 import GrandChild from './GrandChild.vue';
 </script>
@@ -275,7 +275,7 @@ import GrandChild from './GrandChild.vue';
 
 `GrandChild.vue`
 
-```html
+```vue
 <script setup lang="ts">
 defineProps(['a', 'b', 'updataA'])
 </script>
@@ -299,7 +299,7 @@ defineProps(['a', 'b', 'updataA'])
 
 `Child.vue`
 
-```html
+```vue
 <script setup lang="ts">
 import { ref } from 'vue'
 const toy = ref('奥特曼')
@@ -321,7 +321,7 @@ defineExpose({ toy, booksCount })
 
 `Parent.vue`
 
-```html
+```vue
 <script setup lang="ts">
 import Child from './Child.vue';
 import { ref } from 'vue'
@@ -358,7 +358,7 @@ function buyBook() {
 
 `$refs`可以拿到所有的添加引用的子组件的引用
 
-```html
+```vue
 <script setup lang="ts">
 import Child from './Child.vue';
 
@@ -392,7 +392,7 @@ function buyBook(refs:any) {
 
 `祖先组件`
 
-```html
+```vue
 <script setup lang="ts">
 import Child from "./Child.vue";
 import { reactive, ref, provide } from "vue";
@@ -426,7 +426,7 @@ provide("moreMoney", moreMoney)
 
 `后代组件`
 
-```html
+```vue
 <script setup lang="ts">
 import { inject } from 'vue';
 

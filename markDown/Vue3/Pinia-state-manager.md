@@ -4,7 +4,7 @@
 
 在 `main.ts`中引入 `pinia`库并使用
 
-```js
+```javascript
 import { createPinia } from 'pinia'
 
 app.use(createPinia())
@@ -14,7 +14,7 @@ app.use(createPinia())
 
 在 `@/store/`目录下创建 `backpack.ts`文件
 
-```javascript
+```typescript
 import { defineStore } from 'pinia'
 import { reactive } from 'vue'
 
@@ -41,7 +41,7 @@ export const useBackPackStore = defineStore('BackPack', {
 
 在组件中使用 `store`
 
-```javascript
+```vue
 <template>
   <h3 v-if="items.length == 0">您的背包空空如也...</h3>
   <ul v-else>
@@ -75,7 +75,7 @@ const { items, capacity, weight } = storeToRefs(BackPackStore);
 
 ## 方式一：直接修改
 
-```javascript
+```vue
 <script setup lang="ts">
 import { storeToRefs } from 'pinia';
 import { useBackPackStore } from '@/stores/backpack';
@@ -95,7 +95,7 @@ weight = 3;
 
 ## 方式二、$patch批量修改
 
-```javascript
+```vue
 <script setup lang="ts">
 import { storeToRefs } from 'pinia';
 import { useBackPackStore } from '@/stores/backpack';
@@ -119,7 +119,7 @@ BackPackStore.$patch({
 
 想要使用 `actions`修改数据，需要先在 `store`中定义 `actions`
 
-```javascript
+```typescript
 export const useBackPackStore = defineStore('BackPack', {
   state() {
     return {
@@ -144,7 +144,7 @@ export const useBackPackStore = defineStore('BackPack', {
 })
 ```
 
-```javascript
+```vue
 <script setup lang="ts">
 import { storeToRefs } from 'pinia';
 import { useBackPackStore } from '@/stores/backpack';
@@ -167,7 +167,7 @@ BackPackStore.increment({
 
 `pinia`的 `defineStore`的第二个参数可以写成组合式的，不过要记得将需要用到的东西返回出去
 
-```javascript
+```typescript
 import { defineStore } from 'pinia'
 import { reactive } from 'vue'
 
@@ -201,7 +201,7 @@ export const useBackPackStore = defineStore('BackPack', () => {
 
 可以通过 `store` 的 `$subscribe()` 方法侦听 `state` 及其变化。比起普通的 `watch()`，使用 `$subscribe()` 的好处是 `subscriptions` 在 `patch` 后只触发一次
 
-```javascript
+```vue
 <script setup lang="ts">
 import { storeToRefs } from 'pinia';
 import { useBackPackStore } from '@/stores/backpack';

@@ -42,7 +42,7 @@ app.use(router)
 
 1.首先需要引入两个组件：`RouterLink`和 `RouterView`。
 
-```html
+```vue
 <template>
     <div class="wrapper">
         <div>
@@ -89,7 +89,7 @@ import { RouterLink, RouterView } from 'vue-router';
 
 ![](../Vue3.assets/e7c61748576048.png)
 
-```html
+```vue
 <template>
     <div class="hero_wrapper">
         <!-- 没有英雄时 -->
@@ -175,7 +175,7 @@ export default router
 我们同样可以在 `RouterLink`的 `to`属性中添加query参数:`?key1=value1&key2=value2....`。
 那么所有的 `key,value`都可以在对应的组件中通过 `useRoute().query`取得。
 
-```html
+```vue
 <template>
     <!-- 这里省略了其他结构 -->
     <RouterLink class="hero_nav"
@@ -200,7 +200,7 @@ let herosList = reactive([
 
 `HeroInfo`组件
 
-```html
+```vue
 <template>
     <div class="heroInfo">
         <span class="heroInfo_property">名称 :{{ query.name }}</span>
@@ -228,7 +228,7 @@ let { query } = toRefs(route);
 
 ### `query`传递参数的对象形式写法
 
-```html
+```vue
 <RouterLink class="hero_nav" :to="{
                         path: '/characters/heroInfo',
                         query: {
@@ -272,7 +272,7 @@ routes:[
 第二步、在 `RouterLink`中指定参数
 只需在占位符相应的位置添加参数。
 
-```html
+```vue
 <li v-for="hero in herosList" :key="hero.id">
                     <RouterLink class="hero_nav"
                         :to="`/characters/heroInfo/${hero.id}/${hero.name}/${hero.health}/${hero.attack}/${hero.dialogue}`"
@@ -284,7 +284,7 @@ routes:[
 
 第三步、读取 `params`参数
 
-```html
+```vue
 <template>
     <div class="heroInfo">
         <span class="heroInfo_property">名称 :{{ params.name }}</span>
@@ -306,7 +306,7 @@ let { params } = toRefs(route);
 
 与 `query`类似，`params`也有对象形式写法，不过与之不同的是，必须要在 `to`中指定路由名称 `name`，而不能使用 `path`
 
-```html
+```vue
 <li v-for="hero in herosList" :key="hero.id">
       <RouterLink class="hero_nav" :to="{
             name: 'heroInfo',
@@ -329,13 +329,13 @@ Vue组件分为两种：一般组件，路由组件。
 
 如果想要向一个一般组件传递参数，我们格式使用props传参：
 
-```html
+```vue
     <Child id="1" name="zhangsan" age="20" />
 ```
 
 通过props传递的参数，我们可以直接在该组件中获取
 
-```html
+```vue
 <template>
     <span>{{ id }}</span>
     <span>{{ name }}</span>

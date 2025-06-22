@@ -4,7 +4,7 @@
 
 `Child.vue`
 
-```html
+```vue
 <script setup></script>
 
 <template>
@@ -27,7 +27,7 @@
 
 `App.vue`
 
-```html
+```vue
 <script setup>
 import Child from './Child.vue'
 import { ref } from 'vue';
@@ -63,7 +63,7 @@ const videoUrl = ref('http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4')
 
 `Child.vue`
 
-```html
+```vue
 <template>
   <div class="container">
     <header>
@@ -83,7 +83,7 @@ const videoUrl = ref('http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4')
 
 `App.vue`
 
-```html
+```vue
 <script setup>
 import Child from './Child.vue'
 </script>
@@ -114,7 +114,7 @@ import Child from './Child.vue'
 
 `Child.vue`
 
-```html
+```vue
 <script setup>
     const greetingMessage = 'hello'
 </script>
@@ -130,7 +130,7 @@ import Child from './Child.vue'
 
 `App.vue`
 
-```html
+```vue
 <script setup>
     import Child from './Child .vue'
 </script>
