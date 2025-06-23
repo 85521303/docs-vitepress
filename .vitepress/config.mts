@@ -22,7 +22,11 @@ export default defineConfig({
 
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' },
+      {
+        text: '文学', items: [
+          { text: '道德经', link: '/markDown/daodejing/daodejing' },
+        ]
+      },
       {
         text: '前端', items: [
           { text: 'Vue3', link: '/markDown/Vue3/communicate-between-components' },
@@ -32,24 +36,33 @@ export default defineConfig({
     sidebar: {
       '/markdown-examples': [
         {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
+          text: 'Examples',
+          items: [
+            { text: 'Markdown Examples', link: '/markdown-examples' },
+            { text: 'Runtime API Examples', link: '/api-examples' }
+          ]
         }
       ],
       '/markDown/Vue3': [
         {
           text: 'Vue3',
-        items: [
-          { text: 'Vue3 组件间通信', link: '/markDown/Vue3/communicate-between-components' },
-          { text: 'Vue3 插槽', link: '/markDown/Vue3/slot' },
-          { text: 'Vue3 VueRouter', link: '/markDown/Vue3/vue-router' },
-          { text: 'Vue3 Pinia状态管理库', link: '/markDown/Vue3/Pinia-state-manager' },
-          { text: 'Vue3 其他API汇总', link: '/markDown/Vue3/other-API' },
-          { text: 'Vue3 项目配置问题汇总', link: '/markDown/Vue3/project-config' }
-        ]
+          items: [
+            { text: 'Vue3 组件间通信', link: '/markDown/Vue3/communicate-between-components' },
+            { text: 'Vue3 插槽', link: '/markDown/Vue3/slot' },
+            { text: 'Vue3 VueRouter', link: '/markDown/Vue3/vue-router' },
+            { text: 'Vue3 Pinia状态管理库', link: '/markDown/Vue3/Pinia-state-manager' },
+            { text: 'Vue3 其他API汇总', link: '/markDown/Vue3/other-API' },
+            { text: 'Vue3 项目配置问题汇总', link: '/markDown/Vue3/project-config' }
+          ]
+        }
+      ],
+      '/markDown/daodejing': [
+        {
+          text: '道德经',
+          items: [
+            { text: '第一章、天地之始', link: '/markDown/daodejing' },
+            { text: '第二章、功成弗居', link: '/markDown/daodejing' }
+          ]
         }
       ]
     },
