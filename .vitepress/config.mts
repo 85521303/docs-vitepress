@@ -25,7 +25,7 @@ export default defineConfig({
       { text: '首页', link: '/' },
       {
         text: '前端', items: [
-          { text: 'Vue3', link: '/markDown/Vue3/communicate-between-components' },
+          { text: 'Vue3', link: '/markDown/frontend/Vue3/communicate-between-components' },
           { text: '前端杂谈', link: '/markDown/frontend' },
         ]
       },
@@ -34,16 +34,16 @@ export default defineConfig({
     // 侧边栏导航
     sidebar: {
       // Vue3
-      '/markDown/Vue3': [
+      '/markDown/frontend/Vue3': [
         {
           text: 'Vue3',
           items: [
-            { text: 'Vue3 组件间通信', link: '/markDown/Vue3/communicate-between-components' },
-            { text: 'Vue3 插槽', link: '/markDown/Vue3/slot' },
-            { text: 'Vue3 VueRouter', link: '/markDown/Vue3/vue-router' },
-            { text: 'Vue3 Pinia状态管理库', link: '/markDown/Vue3/Pinia-state-manager' },
-            { text: 'Vue3 其他API汇总', link: '/markDown/Vue3/other-API' },
-            { text: 'Vue3 项目配置问题汇总', link: '/markDown/Vue3/project-config' }
+            { text: 'Vue3 组件间通信', link: '/markDown/frontend/Vue3/communicate-between-components' },
+            { text: 'Vue3 插槽', link: '/markDown/frontend/Vue3/slot' },
+            { text: 'Vue3 VueRouter', link: '/markDown/frontend/Vue3/vue-router' },
+            { text: 'Vue3 Pinia状态管理库', link: '/markDown/frontend/Vue3/Pinia-state-manager' },
+            { text: 'Vue3 其他API汇总', link: '/markDown/frontend/Vue3/other-API' },
+            { text: 'Vue3 项目配置问题汇总', link: '/markDown/frontend/Vue3/project-config' }
           ]
         }
       ],
