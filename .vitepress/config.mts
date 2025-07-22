@@ -52,10 +52,11 @@ export default defineConfig({
         {
           text: '前端杂谈',
           items: [
-            { text: 'Vue3杂谈', link: '/markDown/frontend/notes.md' }
+            { text: 'Vue3杂谈', link: '/markDown/frontend/SomeTalk/notes.md' }
           ]
         }
       ],
+      // 道德经
       '/markDown/daodejing': [
         {
           text: '道德经',
