@@ -26,7 +26,7 @@ export default defineConfig({
       {
         text: '前端', items: [
           { text: 'Vue3', link: '/markDown/frontend/Vue3/communicate-between-components' },
-          { text: '前端杂谈', link: '/markDown/frontend' },
+          { text: '前端杂谈', link: '/markDown/frontend/notes.md' },
         ]
       },
     ],
@@ -47,7 +47,15 @@ export default defineConfig({
           ]
         }
       ],
-
+      // 前端杂谈
+      '/markDown/frontend': [
+        {
+          text: '前端杂谈',
+          items: [
+            { text: 'Vue3杂谈', link: '/markDown/frontend/notes.md' }
+          ]
+        }
+      ],
       '/markDown/daodejing': [
         {
           text: '道德经',
