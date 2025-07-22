@@ -8,10 +8,10 @@ export default defineConfig({
   base: "/docs-vitepress/", // GitHub仓库名称
 
   head: [['link', { rel: 'icon', href: '/docs-vitepress/favicon.ico' }]], // favicon
+
   lastUpdated: true, // 页面最后更新时间
 
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
     logo: "img/cloud.svg",  // 主页标题LOGO
 
     // 文章页 "在GitHub上编辑" 链接
@@ -20,29 +20,20 @@ export default defineConfig({
       text: "在GitHub上编辑此页面"
     },
 
+    // 顶部导航
     nav: [
-      { text: 'Home', link: '/' },
-      {
-        text: '文学', items: [
-          { text: '道德经', link: '/markDown/daodejing/daodejing' },
-        ]
-      },
+      { text: '首页', link: '/' },
       {
         text: '前端', items: [
           { text: 'Vue3', link: '/markDown/Vue3/communicate-between-components' },
-      ] }
+          { text: '前端杂谈', link: '/markDown/frontend' },
+        ]
+      },
     ],
 
+    // 侧边栏导航
     sidebar: {
-      '/markdown-examples': [
-        {
-          text: 'Examples',
-          items: [
-            { text: 'Markdown Examples', link: '/markdown-examples' },
-            { text: 'Runtime API Examples', link: '/api-examples' }
-          ]
-        }
-      ],
+      // Vue3
       '/markDown/Vue3': [
         {
           text: 'Vue3',
@@ -56,6 +47,7 @@ export default defineConfig({
           ]
         }
       ],
+
       '/markDown/daodejing': [
         {
           text: '道德经',
@@ -67,6 +59,7 @@ export default defineConfig({
       ]
     },
 
+    // 链接
     socialLinks: [
       { icon: 'github', link: 'https://github.com/85521303' }
     ]
