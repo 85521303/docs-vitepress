@@ -26,6 +26,7 @@ export default defineConfig({
       {
         text: '前端', items: [
           { text: 'Vue3', link: '/markDown/frontend/Vue3/communicate-between-components' },
+          { text: 'Flutter', link: '/markDown/frontend/Flutter/GetX.md' },
           { text: '前端杂谈', link: '/markDown/frontend/notes.md' },
         ]
       },
