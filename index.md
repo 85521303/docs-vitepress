@@ -4,7 +4,7 @@ layout: home
 
 hero:
   name: "天高云淡"
-  text: "超级无敌个人知识库"
+  text: "个人知识库"
   tagline: 持续学习，不断进步
   image:
     src: /img/cloud.svg
