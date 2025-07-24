@@ -4,7 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "天高云淡",
   description: "天高云淡，个人知识库，计算机，前端，后端",
-  
+
   base: "/docs-vitepress/", // GitHub仓库名称
 
   head: [['link', { rel: 'icon', href: '/docs-vitepress/favicon.ico' }]], // favicon
@@ -27,7 +27,7 @@ export default defineConfig({
         text: '前端', items: [
           { text: 'Vue3', link: '/markDown/frontend/Vue3/communicate-between-components' },
           { text: 'Flutter', link: '/markDown/frontend/Flutter/GetX.md' },
-          { text: '前端杂谈', link: '/markDown/frontend/notes.md' },
+          { text: '解决方案', link: '/markDown/frontend/Vue3Solution.md' },
         ]
       },
     ],
@@ -48,25 +48,24 @@ export default defineConfig({
           ]
         }
       ],
-      // 前端杂谈
-      '/markDown/frontend': [
+      // Flutter
+      '/markDown/frontend/Flutter': [
         {
-          text: '前端杂谈',
+          text: 'Flutter',
           items: [
-            { text: 'Vue3杂谈', link: '/markDown/frontend/SomeTalk/notes.md' }
+            { text: 'GetX框架', link: '/markDown/frontend/Flutter/GetX.md' },
           ]
         }
       ],
-      // 道德经
-      '/markDown/daodejing': [
+      // 前端杂谈
+      '/markDown/frontend/Solution': [
         {
-          text: '道德经',
+          text: '解决方案',
           items: [
-            { text: '第一章、天地之始', link: '/markDown/daodejing' },
-            { text: '第二章、功成弗居', link: '/markDown/daodejing' }
+            { text: 'Vue3解决方案', link: '/markDown/frontend/Solution/Vue3Solution.md' }
           ]
         }
-      ]
+      ],
     },
 
     // 链接
