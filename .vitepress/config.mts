@@ -25,14 +25,14 @@ export default defineConfig({
       { text: '首页', link: '/' },
       {
         text: '前端', items: [
-          { text: 'Vue3', link: '/markDown/frontend/Vue3/communicate-between-components' },
-          { text: 'Flutter', link: '/markDown/frontend/Flutter/GetX.md' },
-          { text: '解决方案', link: '/markDown/frontend/Solution/Vue3Solution.md' },
+          { text: 'Vue3', link: '/markdown/frontend/Vue3/communicate-between-components' },
+          { text: 'Flutter', link: '/markdown/frontend/Flutter/GetX.md' },
+          { text: '解决方案', link: '/markdown/frontend/Solution/Vue3Solution.md' },
         ]
       },
       {
         text: '后端', items: [
-          { text: 'JAVA', link: '/markDown/backend/java/1.常用Dos命令' },
+          { text: 'JAVA', link: '/markdown/backend/java/1.常用Dos命令' },
         ]
       }
     ],
@@ -40,47 +40,47 @@ export default defineConfig({
     // 侧边栏导航
     sidebar: {
       // Vue3
-      '/markDown/frontend/Vue3': [
+      '/markdown/frontend/Vue3': [
         {
           text: 'Vue3',
           items: [
-            { text: 'Vue3 组件间通信', link: '/markDown/frontend/Vue3/communicate-between-components' },
-            { text: 'Vue3 插槽', link: '/markDown/frontend/Vue3/slot' },
-            { text: 'Vue3 VueRouter', link: '/markDown/frontend/Vue3/vue-router' },
-            { text: 'Vue3 Pinia状态管理库', link: '/markDown/frontend/Vue3/Pinia-state-manager' },
-            { text: 'Vue3 其他API汇总', link: '/markDown/frontend/Vue3/other-API' },
-            { text: 'Vue3 项目配置问题汇总', link: '/markDown/frontend/Vue3/project-config' }
+            { text: 'Vue3 组件间通信', link: '/markdown/frontend/Vue3/communicate-between-components' },
+            { text: 'Vue3 插槽', link: '/markdown/frontend/Vue3/slot' },
+            { text: 'Vue3 VueRouter', link: '/markdown/frontend/Vue3/vue-router' },
+            { text: 'Vue3 Pinia状态管理库', link: '/markdown/frontend/Vue3/Pinia-state-manager' },
+            { text: 'Vue3 其他API汇总', link: '/markdown/frontend/Vue3/other-API' },
+            { text: 'Vue3 项目配置问题汇总', link: '/markdown/frontend/Vue3/project-config' }
           ]
         }
       ],
       // Flutter
-      '/markDown/frontend/Flutter': [
+      '/markdown/frontend/Flutter': [
         {
           text: 'Flutter',
           items: [
-            { text: 'GetX框架', link: '/markDown/frontend/Flutter/GetX.md' },
+            { text: 'GetX框架', link: '/markdown/frontend/Flutter/GetX.md' },
           ]
         }
       ],
       // 前端杂谈
-      '/markDown/frontend/Solution': [
+      '/markdown/frontend/Solution': [
         {
           text: '解决方案',
           items: [
-            { text: 'Vue3解决方案', link: '/markDown/frontend/Solution/Vue3Solution.md' }
+            { text: 'Vue3解决方案', link: '/markdown/frontend/Solution/Vue3Solution.md' }
           ]
         }
       ],
 
       // java
-      '/markDown/backend/java': [
+      '/markdown/backend/java': [
         {
           text: 'JAVA',
           items: [
-            { text: '常用DOS命令', link: '/markDown/backend/java/1.常用Dos命令' },
-            { text: '数据类型', link: '/markDown/backend/java/2.数据类型' },
-            { text: '位运算符', link: '/markDown/backend/java/3.位运算符' },
-            { text: '进制转换', link: '/markDown/backend/java/4.进制转换' },
+            { text: '常用DOS命令', link: '/markdown/backend/java/1.常用Dos命令' },
+            { text: '数据类型', link: '/markdown/backend/java/2.数据类型' },
+            { text: '位运算符', link: '/markdown/backend/java/3.位运算符' },
+            { text: '进制转换', link: '/markdown/backend/java/4.进制转换' },
 
           ]
         }
