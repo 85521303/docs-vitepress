@@ -17,11 +17,10 @@ hero:
       text: /api-examples
       link: /api-examples
     - theme: alt
-      text: /a/api-examples
-      link: /a/api-examples
-    - theme: alt
-      text: /a/b/api-examples
-      link: /a/b/api-examples
+      text: test
+      link: /markdown/frontend/Vue3/communicate-between-components
+
+
 
 features:
   - title: 🏄热爱自由

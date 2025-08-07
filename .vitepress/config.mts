@@ -58,7 +58,7 @@ export default defineConfig({
         {
           text: 'Flutter',
           items: [
-            { text: 'GetX框架', link: '/markdown/frontend/Flutter/GetX' },
+            { text: 'GetX框架', link: '/markdown/frontend/Flutter/GetX' }
           ]
         }
       ],
