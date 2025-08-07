@@ -14,8 +14,14 @@ hero:
       text: Markdown Examples
       link: /markdown-examples
     - theme: alt
-      text: API Examples
+      text: /api-examples
       link: /api-examples
+    - theme: alt
+      text: /a/api-examples
+      link: /a/api-examples
+    - theme: alt
+      text: /a/b/api-examples
+      link: /a/b/api-examples
 
 features:
   - title: 🏄热爱自由
