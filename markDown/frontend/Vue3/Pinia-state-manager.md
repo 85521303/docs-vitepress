@@ -69,7 +69,7 @@ const { items, capacity, weight } = storeToRefs(BackPackStore);
 
 **注意，我们使用了一个 `pinia`提供的API:`storeToRefs`来解构 `store`,通过这种方式解构的数据是响应式的。**
 
-![](../Vue3.assets/c2401748576048.png)
+![](../vue3.assets/c2401748576048.png)
 
 # 修改 `Store`中的数据
 
@@ -227,10 +227,10 @@ BackPackStore.$subscribe((v1, v2) => {
 
 `$subscribe()`接收的第一个参数：
 
-![](../Vue3.assets/2b1a1748576048.png)
+![](../vue3.assets/2b1a1748576048.png)
 `$subscribe()`接收的第二个参数：
 
-![](../Vue3.assets/b5ab1748576048.png)
+![](../vue3.assets/b5ab1748576048.png)
 
 # 向State中添加新数据
 

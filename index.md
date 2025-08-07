@@ -21,7 +21,6 @@ hero:
       link: /markdown/frontend/Vue3/communicate-between-components
 
 
-
 features:
   - title: 🏄热爱自由
     details: 渴望灵魂的翅膀，不为世俗所困，让心灵在选择的旷野中自由翱翔

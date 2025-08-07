@@ -54,7 +54,7 @@ const videoUrl = ref('http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4')
 ```
 
 父组件将子组件写成双标签的形式，便于在标签内部声明需要传递给子组件的结构
-![](../Vue3.assets/575f1748576048.png)
+![](../vue3.assets/575f1748576048.png)
 如图所示，在同一子组件中，显示了来自父组件传递的不同结构。
 
 # 具名插槽

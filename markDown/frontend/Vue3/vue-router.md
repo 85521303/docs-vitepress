@@ -65,15 +65,15 @@ import { RouterLink, RouterView } from 'vue-router';
 
 页面初始状态
 `http://localhost:5173/`
-![](../Vue3.assets/3ecf1748576048.png)
+![](../vue3.assets/3ecf1748576048.png)
 点击“人物”
 `http://localhost:5173/news`
 
-![](../Vue3.assets/91c91748576048.png)
+![](../vue3.assets/91c91748576048.png)
 点击“背包”
 `http://localhost:5173/about`
 
-![](../Vue3.assets/c67f1748576048.png)
+![](../vue3.assets/c67f1748576048.png)
 
 此时，我们就实现了一个简单的路由跳转。
 
@@ -87,7 +87,7 @@ import { RouterLink, RouterView } from 'vue-router';
 
 左侧为导航区，右侧为展示子路由组件的展示区。
 
-![](../Vue3.assets/e7c61748576048.png)
+![](../vue3.assets/e7c61748576048.png)
 
 ```vue
 <template>
@@ -162,7 +162,7 @@ export default router
 
 此时点击左侧英雄名称即可显示子路由组件
 
-![](../Vue3.assets/8c551748576048.png)
+![](../vue3.assets/8c551748576048.png)
 
 ## 四、路由传参
 
@@ -221,10 +221,10 @@ let { query } = toRefs(route);
 
 `http://localhost:5173/characters/heroInfo?id=h1&name=亚瑟&health=300&attack=30&dialogue=以圣剑的名义，冲锋！`
 
-![](../Vue3.assets/e7c61748576048.png)
+![](../vue3.assets/e7c61748576048.png)
 `http://localhost:5173/characters/heroInfo?id=h5&name=李白&health=900&attack=70&dialogue=一篇诗，一斗酒，一曲长歌，一剑天涯。`
 
-![](../Vue3.assets/28491748576048.png)
+![](../vue3.assets/28491748576048.png)
 
 ### `query`传递参数的对象形式写法
 
@@ -404,7 +404,7 @@ routes: [
 我们此时定义了三个路由规则：`/characters`，`/backpack`，`/characters/heroInfo`。
 但是当我们刚进入网站时，实际的路由为：`/`。
 所以什么组件都不显示，且控制台会报一个警告
-![](../Vue3.assets/3ecf1748576048.png)
+![](../vue3.assets/3ecf1748576048.png)
 ![2025-05-25T15:04:03.png][9]
 
 此时我们可以将默认首页设置为 `/characters`，那么就需要在路由器中设置重定向规则。
