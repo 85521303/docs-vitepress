@@ -54,7 +54,7 @@ export default defineConfig({
         }
       ],
       // Flutter
-      '/docs/frontend/Flutter': [
+      '/docs/frontend/flutter': [
         {
           text: 'Flutter',
           items: [
@@ -63,7 +63,7 @@ export default defineConfig({
         }
       ],
       // 前端杂谈
-      '/docs/frontend/Solution': [
+      '/docs/frontend/solution': [
         {
           text: '解决方案',
           items: [
