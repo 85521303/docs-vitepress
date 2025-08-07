@@ -30,6 +30,11 @@ export default defineConfig({
           { text: '解决方案', link: '/markDown/frontend/Solution/Vue3Solution.md' },
         ]
       },
+      {
+        text: '后端', items: [
+          { text: 'JAVA', link: '/markDown/backend/java/1.常用Dos命令' },
+        ]
+      }
     ],
 
     // 侧边栏导航
@@ -66,6 +71,20 @@ export default defineConfig({
           ]
         }
       ],
+
+      // java
+      '/markDown/backend/java': [
+        {
+          text: 'JAVA',
+          items: [
+            { text: '常用DOS命令', link: '/markDown/backend/java/1.常用Dos命令' },
+            { text: '数据类型', link: '/markDown/backend/java/2.数据类型' },
+            { text: '位运算符', link: '/markDown/backend/java/3.位运算符' },
+            { text: '进制转换', link: '/markDown/backend/java/4.进制转换' },
+
+          ]
+        }
+      ]
     },
 
     // 链接
