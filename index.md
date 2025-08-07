@@ -16,9 +16,6 @@ hero:
     - theme: alt
       text: /api-examples
       link: /api-examples
-    - theme: alt
-      text: test
-      link: /markdown/frontend/Vue3/communicate-between-components
 
 
 features:
