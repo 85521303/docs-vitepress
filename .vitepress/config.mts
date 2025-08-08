@@ -4,7 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "天高云淡",
   description: "天高云淡，个人知识库，计算机，前端，后端",
-
+  outDir:'dist',
   base: "/docs-vitepress/", // GitHub仓库名称
 
   head: [['link', { rel: 'icon', href: '/docs-vitepress/favicon.ico' }]], // favicon
