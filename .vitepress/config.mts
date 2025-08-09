@@ -33,6 +33,7 @@ export default defineConfig({
       {
         text: '后端', items: [
           { text: 'JAVA', link: '/docs/backend/java/1-常用Dos命令' },
+          { text: 'C语言', link: '/docs/backend/c/1-C语言模拟面向对象' },
         ]
       }
     ],
@@ -80,6 +81,16 @@ export default defineConfig({
             { text: '数据类型', link: '/docs/backend/java/2-数据类型' },
             { text: '位运算符', link: '/docs/backend/java/3-位运算符' },
             { text: '进制转换', link: '/docs/backend/java/4-进制转换' },
+
+          ]
+        }
+      ],
+      // c
+      '/docs/backend/c': [
+        {
+          text: 'C语言',
+          items: [
+            { text: 'C语言模拟面向对象', link: '/docs/backend/c/1-C语言模拟面向对象' },
 
           ]
         }
