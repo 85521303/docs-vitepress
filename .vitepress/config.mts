@@ -32,7 +32,7 @@ export default defineConfig({
       },
       {
         text: '后端', items: [
-          { text: 'JAVA', link: '/docs/backend/java/1-常用Dos命令' },
+          { text: 'JAVA', link: '/docs/backend/java/00-常用Dos命令' },
           { text: 'C语言', link: '/docs/backend/c/1-C语言模拟面向对象' },
         ]
       }
@@ -77,11 +77,32 @@ export default defineConfig({
         {
           text: 'JAVA',
           items: [
-            { text: '常用DOS命令', link: '/docs/backend/java/1-常用Dos命令' },
-            { text: '数据类型', link: '/docs/backend/java/2-数据类型' },
-            { text: '位运算符', link: '/docs/backend/java/3-位运算符' },
-            { text: '进制转换', link: '/docs/backend/java/4-进制转换' },
-
+              { text: '00-常用Dos命令', link: '/docs/backend/java/00-常用Dos命令' },
+              { text: '01-环境变量与HelloWorld', link: '/docs/backend/java/01-环境变量与HelloWorld' },
+              { text: '02-变量、数据类型转换、运算符', link: '/docs/backend/java/02-变量、数据类型转换、运算符' },
+              { text: '03-idea、运算符', link: '/docs/backend/java/03-idea、运算符' },
+              { text: '04-流程控制', link: '/docs/backend/java/04-流程控制' },
+              { text: '05-数组', link: '/docs/backend/java/05-数组' },
+              { text: '06-方法', link: '/docs/backend/java/06-方法' },
+              { text: '07-面向对象', link: '/docs/backend/java/07-面向对象' },
+              { text: '08-面向对象', link: '/docs/backend/java/08-面向对象' },
+              { text: '09-面向对象', link: '/docs/backend/java/09-面向对象' },
+              { text: '10-面向对象', link: '/docs/backend/java/10-面向对象' },
+              { text: '11-面向对象', link: '/docs/backend/java/11-面向对象' },
+              { text: '12-面向对象', link: '/docs/backend/java/12-面向对象' },
+              { text: '13-异常Object', link: '/docs/backend/java/13-异常Object' },
+              { text: '14-基础API', link: '/docs/backend/java/14-基础API' },
+              { text: '15-常用API', link: '/docs/backend/java/15-常用API' },
+              { text: '16-多线程', link: '/docs/backend/java/16-多线程' },
+              { text: '17-多线程', link: '/docs/backend/java/17-多线程' },
+              { text: '18-集合', link: '/docs/backend/java/18-集合' },
+              { text: '19-集合', link: '/docs/backend/java/19-集合' },
+              { text: '20-Map集合', link: '/docs/backend/java/20-Map集合' },
+              { text: '21-IO流', link: '/docs/backend/java/21-IO流' },
+              { text: '22-IO流', link: '/docs/backend/java/22-IO流' },
+              { text: '23-网络编程、正则表达式、设计模式', link: '/docs/backend/java/23-网络编程、正则表达式、设计模式' },
+              { text: '24-jdk新特性', link: '/docs/backend/java/24-jdk新特性' },
+              { text: '25-反射、注解', link: '/docs/backend/java/25-反射、注解' }
           ]
         }
       ],
@@ -101,5 +122,5 @@ export default defineConfig({
     socialLinks: [
       { icon: 'github', link: 'https://github.com/85521303' }
     ]
-  }
+  },
 })
